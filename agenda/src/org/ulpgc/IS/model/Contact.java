@@ -1,4 +1,4 @@
 package org.ulpgc.IS.model;
 
-public class Contact {
+public abstract class Contact {
 }
