@@ -6,6 +6,10 @@ import java.util.List;
 public abstract class Contact {
     private String telephone;
     private String email;
-    private List<Address> addressList;
+    private Address address;
 
+    public void setAddress(String street, int number, int floor, String city) {
+        this.address = new Address(street, number, floor, city);
+
+    }
 }
