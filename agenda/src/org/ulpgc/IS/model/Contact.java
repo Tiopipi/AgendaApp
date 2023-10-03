@@ -12,4 +12,12 @@ public abstract class Contact {
         this.address = new Address(street, number, floor, city);
 
     }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
