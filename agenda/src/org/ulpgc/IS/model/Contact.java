@@ -21,4 +21,16 @@ public abstract class Contact {
         this.email = email;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+    abstract String getName();
+
+    public Address getAddress() {
+        return address;
+    }
 }

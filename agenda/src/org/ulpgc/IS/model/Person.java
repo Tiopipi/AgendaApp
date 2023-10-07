@@ -12,4 +12,15 @@ public class Person extends Contact{
         setTelephone(telephone);
 
     }
+    @Override
+    public String getName() {
+        return firstName + " " + lastName;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
