@@ -5,6 +5,11 @@ import java.util.List;
 
 public class Group {
     private final String name;
+
+    public List<Contact> getContactList() {
+        return contactList;
+    }
+
     private List<Contact> contactList;
 
     public Group(String name) {

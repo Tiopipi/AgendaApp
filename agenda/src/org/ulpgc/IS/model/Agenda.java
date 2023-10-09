@@ -9,6 +9,11 @@ public class Agenda {
     }
 
     private List<Contact> contactList;
+
+    public List<Group> getGroupList() {
+        return groupList;
+    }
+
     private List<Group> groupList;
 
     public Agenda() {
