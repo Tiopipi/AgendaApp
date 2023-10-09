@@ -14,7 +14,7 @@ public class Person extends Contact{
     }
     @Override
     public String getName() {
-        return firstName + " " + lastName;
+        return this.firstName + " " + this.lastName;
     }
     public void setFirstName(String firstName) {
         this.firstName = firstName;

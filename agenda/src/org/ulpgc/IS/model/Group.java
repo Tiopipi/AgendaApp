@@ -11,4 +11,12 @@ public class Group {
         this.name = name;
         contactList = new ArrayList<>();
     }
+
+    public void addContact(Contact contact) {
+        this.contactList.add(contact);
+    }
+
+    public void removeContact(Contact contact) {
+        this.contactList.remove(contact);
+    }
 }
