@@ -1,27 +1,30 @@
 package org.ulpgc.IS.model;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Group {
     private final String name;
 
-    public List<Contact> getContactList() {
-        return contactList;
+    public List<Member> getMemberList() {
+        return memberList;
     }
 
-    private List<Contact> contactList;
+    private List<Member> memberList = new ArrayList<>();
 
     public Group(String name) {
         this.name = name;
-        contactList = new ArrayList<>();
     }
 
     public void addContact(Contact contact) {
-        this.contactList.add(contact);
+
+        this.memberList.add(new Member(contact, LocalDateTime.now()));
+
     }
 
-    public void removeContact(Contact contact) {
-        this.contactList.remove(contact);
+    public void removeContact(int index) {
+
+        this.memberList.remove(index);
     }
 }

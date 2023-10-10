@@ -15,8 +15,9 @@ public class Main {
         init(agenda);
         agenda.getGroupList().get(0).addContact(agenda.getContactList().get(0));
         System.out.println(agenda.getContactList().size());
-        System.out.println(agenda.getGroupList().get(0).getContactList().size());
-        agenda.getGroupList().get(0).removeContact(agenda.getContactList().get(0));
-        System.out.println(agenda.getGroupList().get(0).getContactList().size());
+        System.out.println(agenda.getGroupList().get(0).getMemberList().size());
+        System.out.println(agenda.getGroupList().get(0).getMemberList().get(0).getDate());
+        agenda.getGroupList().get(0).removeContact(0);
+        System.out.println(agenda.getGroupList().get(0).getMemberList().size());
     }
 }

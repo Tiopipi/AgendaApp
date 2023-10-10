@@ -10,7 +10,6 @@ public class Person extends Contact{
         setAddress(street, number, floor, city);
         setEmail(email);
         setTelephone(telephone);
-
     }
     @Override
     public String getName() {
